@@ -1,0 +1,108 @@
+﻿@* view model products *@
+
+@using System.Text.Json
+@using Ecommerce.ViewModels
+@model List<ProductsViewModel>
+
+@{
+    ViewBag.PageTitle = "All Products";
+    ViewBag.BtnTitle = "Create New Product";
+    ViewBag.BtnAspController = "products";
+    ViewBag.BtnAspAction = "Create";
+}
+@section Styles {
+    <link href="~/admin/css/adminproductsindex.css" rel="stylesheet" />
+}
+
+
+<table class="table table-hover text-nowrap table-bordered  w-100 " style="table-layout: fixed;" >
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Image</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var productVm in @Model)
+        {
+            <tr>
+                <td>@productVm.Id</td>
+                <td>@productVm.Name</td>
+                <td>@productVm.Price</td>
+                <td class="d-flex justify-content-center">
+                    <div style="width:50%; height:150px;overflow:hidden; ">
+                        <img src=@productVm.ImageUrl
+                             alt="product_img"
+                             class="w-100 h-100 object-fit-contain " />
+                    </div>
+                </td>
+                 <td>
+                    <button onclick='showDetails(@Html.Raw(JsonSerializer.Serialize(productVm)))' class="btn btn-info">Details</button>
+                    <a asp-controller="products" asp-action="edit" asp-route-id="@productVm.Id" class="btn btn-warning">Edit</a>
+                    <a asp-controller="products" asp-action="delete" asp-route-id="@productVm.Id"  class="btn btn-danger">Delete</a>
+                </td>
+            </tr>
+
+        }        
+
+    </tbody>
+</table>
+
+
+@* details modal *@
+<div class="detailsModal">
+    <div class=" modalContent p-5 ">
+        <h2 class="text-white" >More Details</h2>
+        <hr class=" text-white"/>
+        <div class="m-auto mb-3" style="width:50%; height:150px;overflow:hidden; ">
+            <img src=""
+                 alt="product_img"
+                 class="w-100 h-100 object-fit-contain product_img " />
+        </div>
+        <table class="table table-bordered "  > 
+            <tbody>
+                <tr>
+                    <td>id</td>
+                    <td class="text-black-50 product_id"></td>
+                </tr>
+                <tr>
+                    <td>Name</td>
+                    <td class="text-black-50 product_name "></td>
+                </tr>
+                <tr>
+                    <td>Description</td>
+                    <td class="text-black-50 product_desc"></td>
+                </tr>
+                <tr>
+                    <td>Price</td>
+                    <td class="text-black-50 product_price"></td>
+                </tr>
+                <tr>
+                    <td>Rate</td>
+                    <td class="text-black-50 product_rate"></td>
+                </tr>
+                <tr>
+                    <td>quantity</td>
+                    <td class="text-black-50 product_quantity"></td>
+                </tr>
+                <tr>
+                    <td>category Name</td>
+                    <td class="text-black-50 category_name"></td>
+                </tr>
+                               
+
+            </tbody>
+        </table>
+
+        <i class="fa-solid fa-xmark close_icon"></i>
+    </div>
+</div>
+
+
+
+@section Scripts {
+    <script src="~/admin/js/adminproductsindex.js"></script>
+}

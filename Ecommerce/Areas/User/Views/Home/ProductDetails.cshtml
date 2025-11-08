@@ -1,0 +1,38 @@
+﻿@using Ecommerce.ViewModels
+  <!-- Product section-->
+  @* ViewBag.productVm *@
+ @model ProductsViewModel
+<section class=" card p-2 m-4">
+    <div class="container px-4 px-lg-5 my-5">
+        <div class="row gx-4 gx-lg-5 align-items-center">
+            <div class="col-md-4 ">
+                <div style="width:100%; height:400px; overflow:hidden;">
+                    <img src=@ViewBag.productVm.ImageUrl
+                         alt="product_Img"
+                         class="w-100 h-100 object-fit-contain" />
+                </div>
+            </div>
+            <div class="col-md-8">
+                
+                <h2 class="display-5 fw-bolder">@ViewBag.productVm.Name</h2>
+                <div>
+                    <span class="text-black-50">@ViewBag.productVm.CategoryName</span>
+                </div>
+                <div >
+                    <span class="text-black-50">Price: $ @ViewBag.productVm.Price</span>
+                </div>
+                <div >
+                    <span class="text-black-50">Rate: @ViewBag.productVm.Rate</span>
+                </div>
+                <div >
+                    <span class="text-black-50">Quantity: @ViewBag.productVm.Quantity</span>
+                </div>
+                <hr />
+                <div class="fs-3 mt-3 ">
+                    <span>Description:</span>
+                </div>
+                <p class="lead">@ViewBag.productVm.Description</p>
+             </div>
+        </div>
+    </div>
+</section>

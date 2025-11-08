@@ -1,0 +1,48 @@
+﻿@model Category
+
+@{
+    ViewBag.PageTitle = "Edit Category #" + Model.Id;
+    ViewBag.BtnTitle = "Show All Categories";
+    ViewBag.BtnAspController = "categories";
+    ViewBag.BtnAspAction = "Index";
+}
+
+@section Styles {
+
+}
+ 
+<form name="editCategoryForm" class="m-auto w-50" method="post" asp-action="UpdateCategory" asp-controller="categories" asp-area="admin" asp-route-id=@Model.Id enctype="multipart/form-data">
+    <div class="form-floating mb-3">
+        <input asp-for="Name" class="form-control rounded-5" placeholder="" />
+        <label asp-for="Name">Category Name</label>
+        <span class="text-danger mt-1" asp-validation-for="Name"></span>
+    </div>
+
+    <div>
+        <span>Old Image :</span>
+        <div class=" m-auto mb-2  w-25 border border-2  ">
+            <img src="~/uploads/categories/@Model.Image" alt="category_Img" class=" w-100">
+        </div>
+    </div>
+  
+     
+    <div class=" mb-3">
+        <input type="file" class="form-control rounded-5 p-3 " name="file" />
+        <span class="text-danger mt-1" asp-validation-for="Image"></span>
+    </div>
+
+    @*file reader*@
+    <div class="d-none preview_box">
+        <span>New Image :</span>
+        <div class="m-auto  mb-2  w-50 border border-2  ">
+            <img src="" alt="category_Img" class="preview w-100">
+        </div>
+    </div>
+  
+    <button type="submit" class="btn btn-success rounded-5 px-4 w-25">Update</button>
+</form>
+
+
+@section Scripts {
+    <script src="~/admin/js/admincategoriesedit.js"></script>
+}

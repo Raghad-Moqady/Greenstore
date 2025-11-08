@@ -1,0 +1,28 @@
+﻿@{
+    ViewBag.PageTitle = "Statistics";
+}
+
+<div class="row justify-content-center">
+      
+    <div class="col-md-3">
+        <!-- small box -->
+        <div class="small-box bg-info">
+            <div class="inner">
+                <h3>Categories</h3>
+                <p class="fs-2">@ViewBag.categoriesCount</p>
+            </div>
+            <a href="/admin/categories" class="small-box-footer btn">Show All Categories</a>
+        </div>
+    </div>
+     <div class="col-md-3">
+        <!-- small box -->
+        <div class="small-box bg-warning">
+            <div class="inner">
+                <h3>Products</h3>
+                <p class="fs-2">@ViewBag.productsCount</p>
+            </div>
+            <a href="/admin/products" class="small-box-footer btn">Show All Products</a>
+        </div>
+    </div>
+    
+</div>

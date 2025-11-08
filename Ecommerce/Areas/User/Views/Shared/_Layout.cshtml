@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecommerce</title>
+    <script type="importmap"></script>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+
+    @* view css files *@
+    @RenderSection("Styles", required: false)
+
+    <!-- custom css-->
+    <link href="~/user/css/_layout.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand fw-bold text-success" href="#">Greenstore</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="/user/home/index">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/user/home/AllProducts">Plants</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/admin">Admin</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+ 
+      @RenderBody()
+  
+    <!-- Footer-->
+    <footer class="py-5  text-white">
+        <div class="container">
+            <p class="m-0 text-center ">Copyright &copy; Greenstore 2025</p>
+            <p class="m-0 mt-2 text-center ">Eng.FullStackDeveloper.Raghad Moqady </p>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+     @* view js files  *@
+    @RenderSection("Scripts", required: false)
+    <!-- custom css-->
+    <script src="~/user/js/_layout.js"></script>
+
+ </body>
+</html>

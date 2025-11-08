@@ -1,0 +1,50 @@
+﻿@model Category
+
+ 
+@{
+    ViewBag.PageTitle = "Create New Category";
+    ViewBag.BtnTitle = "Show All Categories";
+    ViewBag.BtnAspController = "categories";
+    ViewBag.BtnAspAction = "Index";
+}
+@section Styles {
+ 
+}
+
+@* <form class="m-auto w-50" method="post" action="/admin/categories/AddCategory" enctype="multipart/form-data" >
+    <div class="form-floating mb-3">
+        <input type="text" class="form-control rounded-5 " id="CategoryName" placeholder="" name="Name" value=@Model.Name />
+        <label for="CategoryName">Category Name</label>
+        <span class="text-danger" asp-validation-for="Name"></span>
+    </div>
+    <div class=" mb-3">
+        <input type="file" class="form-control rounded-5 p-3 " name="file" />
+     </div>
+    <button type="submit" class="btn btn-success rounded-5 px-4 w-25">Add</button>
+</form> *@
+
+
+<form name="createCategoryForm" class="m-auto w-50" method="post" asp-action="AddCategory" asp-controller="categories" asp-area="admin" enctype="multipart/form-data">
+    <div class="form-floating mb-3">
+        <input asp-for="Name" class="form-control rounded-5" placeholder="" />
+        <label asp-for="Name">Category Name</label>
+        <span class="text-danger mt-1" asp-validation-for="Name"></span>
+    </div>
+
+    <div class=" mb-3">
+        <input type="file" class="form-control rounded-5 p-3 " name="file" />
+        <span class="text-danger mt-1" asp-validation-for="Image"></span>
+    </div>
+
+    @*file reader*@
+    <div class="m-auto  mb-2 d-none preview_box w-50 border border-2  ">
+        <img src="" alt="category_Img" class="preview w-100">
+    </div>
+    <button type="submit" class="btn btn-success rounded-5 px-4 w-25">Add</button>
+</form>
+
+
+@section Scripts {
+    <script src="~/admin/js/admincategoriescreate.js"></script>
+}
+
