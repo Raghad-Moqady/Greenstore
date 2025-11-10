@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Remove="wwwroot\admin\css\_AdminLayout.css" />
+    <Content Remove="wwwroot\admin\css\adminLayout.css" />
   </ItemGroup>
 
   <ItemGroup>
@@ -28,7 +28,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="wwwroot\admin\css\_AdminLayout.css" />
+    <None Include="wwwroot\admin\css\adminLayout.css" />
     <None Include="wwwroot\user\css\_Layout.css" />
     <None Include="wwwroot\user\js\_Layout.js" />
   </ItemGroup>

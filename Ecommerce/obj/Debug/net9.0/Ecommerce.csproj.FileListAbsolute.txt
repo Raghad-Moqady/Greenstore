@@ -345,3 +345,4 @@ C:\Users\LENOVO\Desktop\BackendNew2025_R12\MVC\Ecommerce\Ecommerce\obj\Debug\net
 C:\Users\LENOVO\Desktop\BackendNew2025_R12\MVC\Ecommerce\Ecommerce\obj\Debug\net9.0\compressed\z33jh4meb9-cakx4zelun.gz
 C:\Users\LENOVO\Desktop\BackendNew2025_R12\MVC\Ecommerce\Ecommerce\obj\Debug\net9.0\compressed\3w74pzvzbc-3s1rdqy7ap.gz
 C:\Users\LENOVO\Desktop\BackendNew2025_R12\MVC\Ecommerce\Ecommerce\obj\Debug\net9.0\compressed\rt5000ss9z-4ta47mp23h.gz
+C:\Users\LENOVO\Desktop\BackendNew2025_R12\MVC\Ecommerce\Ecommerce\obj\Debug\net9.0\Ecommerce.sourcelink.json

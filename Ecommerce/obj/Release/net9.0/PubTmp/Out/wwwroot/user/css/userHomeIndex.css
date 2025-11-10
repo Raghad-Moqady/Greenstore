@@ -1,0 +1,52 @@
+﻿header {
+     height: 80vh; 
+}
+
+.header1 {
+    background-image: url('../imgs/homeheader_background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: overlay;
+}
+
+.header2 {
+    background-image: url('../imgs/headerbg2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+        background-position-y: 49%;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: overlay;
+}
+
+.header3 {
+    background-image: url('../imgs/headerbg3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 60%;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: overlay;
+}
+.category_img {
+    border-radius: 100%;
+    overflow:hidden;
+}
+.category_img img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+
+.breakSection {
+     background-image: url('../imgs/middle-cta.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 60%;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: overlay;
+    height: 50vh;
+}
+
+

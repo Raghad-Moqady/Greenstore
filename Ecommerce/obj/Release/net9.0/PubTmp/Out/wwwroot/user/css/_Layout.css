@@ -1,0 +1,22 @@
+﻿body {
+    background-color:whitesmoke;
+    margin:0px;
+    padding:0px;
+}
+footer {
+    background-color: rgba(130, 183, 163, 1);
+}
+nav {
+    background-color: white;
+
+}
+.btn {
+    background-color: rgba(130, 183, 163, 1);
+    color: white;
+}
+
+.my-no-hover:hover {
+    background-color: rgba(130, 183, 163, 1) !important;
+    color: white !important;
+}
+ 

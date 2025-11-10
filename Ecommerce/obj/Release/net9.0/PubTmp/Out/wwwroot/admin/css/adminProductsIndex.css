@@ -1,0 +1,46 @@
+﻿
+/*details modal*/
+
+
+.detailsModal {
+    background-color: rgba(3, 8, 12, 0.667);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .6s;
+    backdrop-filter: blur(5px);
+   
+}
+.show_modal {
+    opacity: 1;
+    visibility: visible;
+}
+.modalContent {
+    width: 30%;
+    height: 60%;
+    background-color: transparent;
+    position: relative;
+    top: 20%;
+    margin: auto;
+    user-select: none;
+    overflow-y: auto;
+    border: 1px solid white;
+    box-shadow: 0 6px 20px 0 white;
+}
+.detailsModal .table td {
+    white-space: normal;  
+    word-break: break-all;  
+/*    max-width: 200px;  */
+}
+.close_icon {
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 5px;
+    color: white;
+    font-size: x-large;
+}
