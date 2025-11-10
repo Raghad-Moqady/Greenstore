@@ -82,16 +82,15 @@ Manage products and categories with a dashboard powered by AdminLTE 4.
 
 ### User Area
 - **Home Page**
-![User Home](./screenshots/user/homepage.png)
-
-- **Categories Section**
-![Categories Section](./screenshots/user/categories.png)
-
-- **Top Products Section**
-![Top Products](./screenshots/user/top-products.png)
+![User Home](./screenshots/user/home1.png)
+![User Home](./screenshots/user/home2.png)
+![User Home](./screenshots/user/home3.png)
+ 
+- **All Products Page**
+![All Products Page](./screenshots/user/allProducts.png)
 
 - **Product Details Page**
-![Product Details Page](./screenshots/user/product-details.png)
+![Product Details Page](./screenshots/user/product_details.png)
 
 
 ## Future Improvements
