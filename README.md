@@ -24,6 +24,18 @@ GreenStore is designed for plant enthusiasts to explore and purchase a variety o
 
 ---
 
+## 🚀 Live Demo
+Check out the live version here:  
+👉 [Live Demo on Monster](http://raghadmoqady.runasp.net/)
+
+---
+
+## 💻 Repository
+View the source code on GitHub:  
+📂 [GitHub Repository](https://github.com/Raghad-Moqady/Greenstore.git)
+
+---
+
 ## Features
 
 ### Admin Area
