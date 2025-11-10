@@ -3,6 +3,16 @@
 GreenStore is a full-stack **ASP.NET Core MVC e-commerce platform** focused on plant sales. It provides a clean interface for users to browse and view products, while admins can manage categories and products efficiently.
 
 ---
+## 🚀 Live Demo
+Check out the live version here:  
+👉 [Live Demo on Monster](http://raghadmoqady.runasp.net/)
+
+
+## 💻 Repository
+View the source code on GitHub:  
+📂 [GitHub Repository](https://github.com/Raghad-Moqady/Greenstore.git)
+
+---
 
 ## Table of Contents
 - [Project Overview](#project-overview)
@@ -21,18 +31,6 @@ GreenStore is designed for plant enthusiasts to explore and purchase a variety o
 - Image handling and previews.
 - Server-side and client-side validations.
 - Structured admin and user areas.
-
----
-
-## 🚀 Live Demo
-Check out the live version here:  
-👉 [Live Demo on Monster](http://raghadmoqady.runasp.net/)
-
----
-
-## 💻 Repository
-View the source code on GitHub:  
-📂 [GitHub Repository](https://github.com/Raghad-Moqady/Greenstore.git)
 
 ---
 
